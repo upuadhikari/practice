@@ -1,0 +1,51 @@
+Jquery is required to do AJAX works.
+
+**Need: Jquery or AJAX link is required to run them like:
+
+<script src="jqueryLink.js"></script> // Add from Net (latest)
+
+###### Format of JQUERY ######
+
+$("#id").event(function(){
+	
+// do something
+
+})
+
+(NOTE) => here: '#id' is a is id from form/html body and can be '.class', 'td' as html tag etc; 
+here: '.event' is action oriented activities and can be like 'click', 'change', 'blur', 'keyup',etc (look more events)
+
+****** Example of Jquery ******
+
+<button id="clickme" type="button"> Click </button>
+
+<p> This is a paragraph that hides when button is clicked! </p>
+
+//Jquery
+
+$("#clickme").click(function(){
+	$('p').hide(); //here hide() is function of Jquery
+});
+
+********* Other Important Jquery Function ***********
+hide, show, remove, attr, val, text, html, reload, load, find, closest, stopPropagation, stopImmediatePropagation
+
+
+######## AJAX format #######
+Ajax helps to pass data without refreshing the page.
+
+$.ajax({
+	
+	url: "abc.php", //abc.php is page where we want to redirect ajax for CRUD
+	type: "GET/POST",
+	data:{variable:valueFromForm},
+	success: function(){
+		alert("Result after ajax is completes")
+	}
+});
+
+****** Example of AJAX *******
+Given in page format
+
+
+
